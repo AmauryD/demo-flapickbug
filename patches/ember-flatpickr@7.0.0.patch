@@ -1,0 +1,12 @@
+diff --git a/dist/components/ember-flatpickr.js b/dist/components/ember-flatpickr.js
+index 9b929149360f8769431d306e3f51f7ddf785dc93..b6d6543136786d40559f3d76421069e6222b2ba9 100644
+--- a/dist/components/ember-flatpickr.js
++++ b/dist/components/ember-flatpickr.js
+@@ -3,6 +3,7 @@ import { action } from '@ember/object';
+ import { assert } from '@ember/debug';
+ import { scheduleOnce } from '@ember/runloop';
+ import flatpickr from 'flatpickr';
++console.log('[ember-flatpickr] flatpickr lib imported by component', window.flatpickr.l10ns);
+ import { getOwner } from '@ember/application';
+ import { precompileTemplate } from '@ember/template-compilation';
+ import { setComponentTemplate } from '@ember/component';

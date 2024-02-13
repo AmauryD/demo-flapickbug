@@ -1,0 +1,45 @@
+diff --git a/dist/esm/l10n/fr.js b/dist/esm/l10n/fr.js
+index e256e3f5167ce6ae5c09ad1906584f236da93d9f..daaff2e84d1c31a6b47aa128a24caade02fa39ce 100644
+--- a/dist/esm/l10n/fr.js
++++ b/dist/esm/l10n/fr.js
+@@ -3,6 +3,9 @@ var fp = typeof window !== "undefined" && window.flatpickr !== undefined
+     : {
+         l10ns: {},
+     };
++
++console.log('[flatpickr] Importing locale French, window.flatpickr = ', window.flatpickr);
++
+ export var French = {
+     firstDayOfWeek: 1,
+     weekdays: {
+@@ -59,4 +62,6 @@ export var French = {
+     time_24hr: true,
+ };
+ fp.l10ns.fr = French;
++console.log('[flatpickr] Trying to register French locale to window.flatpickr.l10ns.fr');
++console.log('[flatpickr] window.flatpickr.l10ns = ', window.flatpickr?.l10ns);
+ export default fp.l10ns;
+diff --git a/dist/l10n/fr.js b/dist/l10n/fr.js
+index f2f7b0faf29298e441b1c13fc009a562b64ce1ae..59f829edb901eaf2f1ce8fa903588013c95f9908 100644
+--- a/dist/l10n/fr.js
++++ b/dist/l10n/fr.js
+@@ -9,6 +9,9 @@
+       : {
+           l10ns: {},
+       };
++
++    console.log('[flatpickr] Importing locale French, window.flatpickr = ', window.flatpickr);
++
+   var French = {
+       firstDayOfWeek: 1,
+       weekdays: {
+@@ -65,6 +68,9 @@
+       time_24hr: true,
+   };
+   fp.l10ns.fr = French;
++
++  console.log('[flatpickr] Trying to register French locale to window.flatpickr.l10ns.fr');
++console.log('[flatpickr] window.flatpickr.l10ns = ', window.flatpickr?.l10ns);
+   var fr = fp.l10ns;
+ 
+   exports.French = French;
